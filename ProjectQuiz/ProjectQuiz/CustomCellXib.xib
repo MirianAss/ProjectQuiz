@@ -35,7 +35,7 @@
                 <outlet property="imageXib" destination="tu4-G7-QCh" id="ee5-Lm-bmf"/>
                 <outlet property="lblXib" destination="4BF-36-xAl" id="r1Y-Eb-Iij"/>
             </connections>
-            <point key="canvasLocation" x="184.73282442748092" y="-20.422535211267608"/>
+            <point key="canvasLocation" x="163" y="-20"/>
         </tableViewCell>
     </objects>
 </document>

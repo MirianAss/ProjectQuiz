@@ -180,6 +180,96 @@
             </objects>
             <point key="canvasLocation" x="2121.3740458015268" y="-2.1126760563380285"/>
         </scene>
+        <!--Screen Question Two-->
+        <scene sceneID="1nI-XH-3L6">
+            <objects>
+                <viewController storyboardIdentifier="screenQuestionTwo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KXv-7i-LFi" customClass="ScreenQuestionTwo" customModule="ProjectQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fcl-7N-E3d">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bo-Ri-dvB">
+                                <rect key="frame" x="55" y="59" width="298" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cE-Er-5dt">
+                                <rect key="frame" x="55" y="310" width="298" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.97282153299999996" green="0.2191203021" blue="0.86830686440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xE-5b-R52">
+                                <rect key="frame" x="55" y="389" width="298" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.40784314269999999" green="0.87450981139999995" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bE0-gQ-Bdg">
+                                <rect key="frame" x="55" y="464" width="298" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.2530435781" green="0.052395105050000002" blue="0.99043749560000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCC-G5-GWs">
+                                <rect key="frame" x="114" y="547" width="164" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alternativa A">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.97282153299999996" green="0.2191203021" blue="0.86830686440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btA:" destination="KXv-7i-LFi" eventType="touchUpInside" id="HL4-te-kJD"/>
+                                    <action selector="btAlternativeA:" destination="KXv-7i-LFi" eventType="touchUpInside" id="VFn-rR-qb7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn9-SE-whu">
+                                <rect key="frame" x="114" y="613" width="164" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alternativa B">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.40784314269999999" green="0.87450981139999995" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btAlternativeB:" destination="KXv-7i-LFi" eventType="touchUpInside" id="JpA-Xz-tXP"/>
+                                    <action selector="btB:" destination="KXv-7i-LFi" eventType="touchUpInside" id="14I-QP-nS0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BB-AA-Xe6">
+                                <rect key="frame" x="114" y="679" width="164" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alternativa C">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.2530435781" green="0.052395105050000002" blue="0.99043749560000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btAlternativeC:" destination="KXv-7i-LFi" eventType="touchUpInside" id="rh1-GJ-fb2"/>
+                                    <action selector="btC:" destination="KXv-7i-LFi" eventType="touchUpInside" id="x2c-HF-O5k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UVX-a8-kHa"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblQuestion" destination="2bo-Ri-dvB" id="b7k-9Q-62v"/>
+                        <outlet property="lblQuestionA" destination="5cE-Er-5dt" id="z05-lH-cBU"/>
+                        <outlet property="lblQuestionB" destination="4xE-5b-R52" id="RWz-Mm-W6Q"/>
+                        <outlet property="lblQuestionC" destination="bE0-gQ-Bdg" id="5Py-CI-H2a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yq7-YT-pec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2818" y="-2"/>
+        </scene>
     </scenes>
     <resources>
         <image name="capa" width="320" height="180"/>
