@@ -11,6 +11,15 @@ class TableViewViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var LevelOne = Quiz(imageLevel: "1", level: "NÍVEL", questionOne: "", questionTwo: "", questionThree: "", questionFour: "", questionFive: "", alternativeA: "", alternativeB: "", alternativeC: "")
+    var LevelTwo = Quiz(imageLevel: "2", level: "NÍVEL", questionOne: "", questionTwo: "", questionThree: "", questionFour: "", questionFive: "", alternativeA: "", alternativeB: "", alternativeC: "")
+    var LevelThree = Quiz(imageLevel: "3", level: "NÍVEL", questionOne: "", questionTwo: "", questionThree: "", questionFour: "", questionFive: "", alternativeA: "", alternativeB: "", alternativeC: "")
+    var arrayLevels: [Quiz] = []
+    
+    func quiz() {
+        arrayLevels = [LevelOne, LevelTwo, LevelThree]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
