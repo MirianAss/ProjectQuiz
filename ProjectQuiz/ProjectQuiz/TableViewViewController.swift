@@ -22,19 +22,39 @@ class TableViewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        quiz()
+        tableView.delegate = self
+        tableView.dataSource = self
+        let uiNib = UINib(nibName: "CustomCellXib", bundle: nil)
+        tableView.register(uiNib, forCellReuseIdentifier: "cellXib")
+    }
 
-        // Do any additional setup after loading the view.
+}
+extension TableViewViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrayLevels.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cellXib", for: indexPath) as? CustomCellXib {
+            
+            cell.setupQuiz(quizXib: arrayLevels[indexPath.row])
+            
+            return cell
+        }
+        
+        return UITableViewCell()
     }
-    */
-
+ 
+}
+extension TableViewViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let screen = self.storyboard?.instantiateViewController(withIdentifier: "screenQuestionOne") as? ScreenQuestionOne {
+            
+            screen.screenQuestionOne = arrayLevels[indexPath.row]
+            
+            self.navigationController?.pushViewController(screen, animated: true)
+        }
+    }
 }

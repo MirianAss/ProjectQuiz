@@ -14,6 +14,8 @@ class ScreenQuestionOne: UIViewController {
     @IBOutlet weak var lblAlternativeB: UILabel!
     @IBOutlet weak var lblAlternativeC: UILabel!
     
+    var screenQuestionOne = Quiz(imageLevel: "", level: "", questionOne: "", questionTwo: "", questionThree: "", questionFour: "", questionFive: "", alternativeA: "", alternativeB: "", alternativeC: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
