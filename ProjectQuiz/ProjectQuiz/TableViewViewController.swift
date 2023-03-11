@@ -11,9 +11,9 @@ class TableViewViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var LevelOne = Quiz(imageLevel: "1", level: "NÍVEL", questionOne: "Budapeste é a capital de qual país europeu?", questionTwo: "", questionThree: "", questionFour: "", questionFive: "", alternativeA: "", alternativeB: "", alternativeC: "")
-    var LevelTwo = Quiz(imageLevel: "2", level: "NÍVEL", questionOne: "", questionTwo: "", questionThree: "", questionFour: "", questionFive: "", alternativeA: "", alternativeB: "", alternativeC: "")
-    var LevelThree = Quiz(imageLevel: "3", level: "NÍVEL", questionOne: "", questionTwo: "", questionThree: "", questionFour: "", questionFive: "", alternativeA: "", alternativeB: "", alternativeC: "")
+    var LevelOne = Quiz(imageLevel: "1", level: "NÍVEL", questionOne: "Budapeste é a capital de qual país europeu?", questionTwo: "Onde se localiza a Torre de Pisa?", questionThree: "Qual a flor nacional do Brasil?", alternativeA1: "Hungria", alternativeA2: "Alemanha", alternativeA3: "Girassol", alternativeB1: "Dinamarca", alternativeB2: "França", alternativeB3: "Ipê - Amarelo", alternativeC1: "Eslováquia", alternativeC2: "Itália", alternativeC3: "Rosa Amarela")
+    var LevelTwo = Quiz(imageLevel: "2", level: "NÍVEL", questionOne: "", questionTwo: "", questionThree: "", alternativeA1: "", alternativeA2: "", alternativeA3: "", alternativeB1: "", alternativeB2: "", alternativeB3: "", alternativeC1: "", alternativeC2: "", alternativeC3: "")
+    var LevelThree = Quiz(imageLevel: "3", level: "NÍVEL", questionOne: "", questionTwo: "", questionThree: "", alternativeA1: "", alternativeA2: "", alternativeA3: "", alternativeB1: "", alternativeB2: "", alternativeB3: "", alternativeC1: "", alternativeC2: "", alternativeC3: "")
     var arrayLevels: [Quiz] = []
     
     func quiz() {

@@ -19,6 +19,7 @@
 		3A1E8E4B29BBDF7700464FC8 /* CustomCellXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E8E4929BBDF7700464FC8 /* CustomCellXib.swift */; };
 		3A1E8E4C29BBDF7700464FC8 /* CustomCellXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1E8E4A29BBDF7700464FC8 /* CustomCellXib.xib */; };
 		3A1E8E4E29BBE53800464FC8 /* ScreenQuestionTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E8E4D29BBE53800464FC8 /* ScreenQuestionTwo.swift */; };
+		3A236E8329BC2398001CA8E2 /* ScreenQuestionThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A236E8229BC2398001CA8E2 /* ScreenQuestionThree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3A1E8E4929BBDF7700464FC8 /* CustomCellXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellXib.swift; sourceTree = "<group>"; };
 		3A1E8E4A29BBDF7700464FC8 /* CustomCellXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellXib.xib; sourceTree = "<group>"; };
 		3A1E8E4D29BBE53800464FC8 /* ScreenQuestionTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenQuestionTwo.swift; sourceTree = "<group>"; };
+		3A236E8229BC2398001CA8E2 /* ScreenQuestionThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenQuestionThree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				3A1E8E4329BBA8FC00464FC8 /* TableViewViewController.swift */,
 				3A1E8E4729BBDD1B00464FC8 /* ScreenQuestionOne.swift */,
 				3A1E8E4D29BBE53800464FC8 /* ScreenQuestionTwo.swift */,
+				3A236E8229BC2398001CA8E2 /* ScreenQuestionThree.swift */,
 				3A1E8E4529BBAA1900464FC8 /* Quiz.swift */,
 				3A1E8E3829BBA4B600464FC8 /* Assets.xcassets */,
 				3A1E8E3A29BBA4B600464FC8 /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 				3A1E8E4B29BBDF7700464FC8 /* CustomCellXib.swift in Sources */,
 				3A1E8E4E29BBE53800464FC8 /* ScreenQuestionTwo.swift in Sources */,
 				3A1E8E4429BBA8FC00464FC8 /* TableViewViewController.swift in Sources */,
+				3A236E8329BC2398001CA8E2 /* ScreenQuestionThree.swift in Sources */,
 				3A1E8E4829BBDD1B00464FC8 /* ScreenQuestionOne.swift in Sources */,
 				3A1E8E3229BBA4B400464FC8 /* SceneDelegate.swift in Sources */,
 			);
