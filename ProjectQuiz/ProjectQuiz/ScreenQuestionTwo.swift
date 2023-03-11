@@ -26,11 +26,11 @@ class ScreenQuestionTwo: UIViewController {
     }
    
     @IBAction func btA(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func btB(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func btC(_ sender: Any) {

@@ -35,11 +35,11 @@ class ScreenQuestionOne: UIViewController {
     }
     
     @IBAction func btAlternativeB(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
 
     @IBAction func btAlternativeC(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
 
     }
 }
