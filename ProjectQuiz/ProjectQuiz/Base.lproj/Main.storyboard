@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ar-xs-pfY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ar-xs-pfY">
                                 <rect key="frame" x="19" y="245" width="355" height="363"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="capa"/>
                                 <connections>
@@ -28,6 +27,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Ar-xs-pfY" secondAttribute="trailing" constant="19" id="7BB-dc-JYX"/>
+                            <constraint firstItem="7Ar-xs-pfY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="186" id="SAO-y4-yJS"/>
+                            <constraint firstItem="7Ar-xs-pfY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="nfL-lu-QFA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Ar-xs-pfY" secondAttribute="bottom" constant="210" id="vku-uD-UPy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -310,25 +315,23 @@
                                 <rect key="frame" x="113" y="513" width="164" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Alternativa A">
+                                <buttonConfiguration key="configuration" style="plain" title="A">
                                     <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="17"/>
                                     <color key="baseForegroundColor" red="0.97282153299999996" green="0.2191203021" blue="0.86830686440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="btA:" destination="JTt-za-Gcu" eventType="touchUpInside" id="ttd-RL-0z7"/>
-                                    <action selector="btAlternativeA:" destination="JTt-za-Gcu" eventType="touchUpInside" id="t6K-ZR-eFD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwF-Ph-jAV">
                                 <rect key="frame" x="113" y="564" width="164" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Alternativa B">
+                                <buttonConfiguration key="configuration" style="plain" title="B">
                                     <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="17"/>
                                     <color key="baseForegroundColor" red="0.40784314269999999" green="0.87450981139999995" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btAlternativeB:" destination="JTt-za-Gcu" eventType="touchUpInside" id="QTU-ND-qqs"/>
                                     <action selector="btB:" destination="JTt-za-Gcu" eventType="touchUpInside" id="D3j-2d-uGl"/>
                                 </connections>
                             </button>
@@ -336,12 +339,11 @@
                                 <rect key="frame" x="113" y="615" width="164" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Alternativa C">
+                                <buttonConfiguration key="configuration" style="plain" title="C">
                                     <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="17"/>
                                     <color key="baseForegroundColor" red="0.44432657190000002" green="0.74641102609999999" blue="0.99043749560000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btAlternativeC:" destination="JTt-za-Gcu" eventType="touchUpInside" id="M1S-5u-yfU"/>
                                     <action selector="btB:" destination="JTt-za-Gcu" eventType="touchUpInside" id="hD7-3r-KQ7"/>
                                     <action selector="btC:" destination="JTt-za-Gcu" eventType="touchUpInside" id="f6M-oI-gFT"/>
                                 </connections>
@@ -361,9 +363,48 @@
             </objects>
             <point key="canvasLocation" x="737" y="673"/>
         </scene>
+        <!--End Screen-->
+        <scene sceneID="jtW-HF-53y">
+            <objects>
+                <viewController storyboardIdentifier="end" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EEm-NO-DMR" customClass="EndScreen" customModule="ProjectQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C3y-4A-d3N">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="3yp-6T-slx">
+                                <rect key="frame" x="18" y="59" width="357" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parabés, você acertou as 3 questões e chegou no final do quiz!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRV-cU-pBO">
+                                <rect key="frame" x="56" y="326" width="280" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <color key="textColor" red="0.64705884459999996" green="0.94901961089999998" blue="0.93333339689999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNU-pW-uSv">
+                                <rect key="frame" x="84" y="633" width="225" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="d1d9facdc69b14f8e42657d49ef4b69c Pequena"/>
+                                <connections>
+                                    <action selector="btBackStart:" destination="EEm-NO-DMR" eventType="touchUpInside" id="Dld-jM-O7g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yBG-Bz-eE4"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Kj-YJ-SPr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448.0916030534352" y="672.53521126760563"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="balao" width="320" height="320"/>
         <image name="capa" width="320" height="180"/>
+        <image name="d1d9facdc69b14f8e42657d49ef4b69c Pequena" width="320" height="188"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
